@@ -1,0 +1,107 @@
+warning: unused import: `dialoguer::Confirm`
+ --> src/systemd.rs:5:5
+  |
+5 | use dialoguer::Confirm;
+  |     ^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused variable: `e`
+   --> src/cli.rs:268:28
+    |
+268 |                 if let Err(e) = config::validate_config() {
+    |                            ^ help: if this is intentional, prefix it with an underscore: `_e`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
+warning: unused variable: `options`
+   --> src/config.rs:347:9
+    |
+347 |     let options = if let Some(cfg) = existing_cfg {
+    |         ^^^^^^^ help: if this is intentional, prefix it with an underscore: `_options`
+
+warning: `vfio-tool` (lib) generated 3 warnings (run `cargo fix --lib -p vfio-tool` to apply 1 suggestion)
+    Finished `release` profile [optimized] target(s) in 0.02s
+     Running `target/release/generate-man`
+.ie \n(.g .ds Aq \(aq
+.el .ds Aq '
+.TH vfio-tool 1  "vfio-tool 0.1.0" 
+.SH NAME
+vfio\-tool \- Comprehensive CLI tool for VFIO device management and kernel bypass
+.SH SYNOPSIS
+\fBvfio\-tool\fR [\fB\-h\fR|\fB\-\-help\fR] [\fB\-V\fR|\fB\-\-version\fR] <\fIsubcommands\fR>
+.SH DESCRIPTION
+Comprehensive CLI tool for VFIO device management and kernel bypass
+.SH OPTIONS
+.TP
+\fB\-h\fR, \fB\-\-help\fR
+Print help
+.TP
+\fB\-V\fR, \fB\-\-version\fR
+Print version
+.SH SUBCOMMANDS
+.TP
+vfio\-tool\-list(1)
+List all network interfaces with their current state
+.TP
+vfio\-tool\-status(1)
+Show system VFIO/IOMMU status
+.TP
+vfio\-tool\-info(1)
+Show detailed information about a specific interface
+.TP
+vfio\-tool\-check(1)
+Check system readiness for VFIO
+.TP
+vfio\-tool\-bind(1)
+Bind interface(s) to VFIO immediately
+.TP
+vfio\-tool\-unbind(1)
+Unbind interface(s) from VFIO (return to kernel)
+.TP
+vfio\-tool\-reset(1)
+Reset all VFIO bindings (unbind all)
+.TP
+vfio\-tool\-configure(1)
+Interactive configuration wizard
+.TP
+vfio\-tool\-update(1)
+Update configuration when hardware changes
+.TP
+vfio\-tool\-save(1)
+Save configuration for specified interfaces
+.TP
+vfio\-tool\-apply(1)
+Apply saved configuration
+.TP
+vfio\-tool\-show\-config(1)
+Show current configuration
+.TP
+vfio\-tool\-install(1)
+Install systemd service for persistence
+.TP
+vfio\-tool\-uninstall(1)
+Uninstall systemd service
+.TP
+vfio\-tool\-generate\-script(1)
+Generate standalone bash script
+.TP
+vfio\-tool\-explain(1)
+Explain what would happen to an interface
+.TP
+vfio\-tool\-validate(1)
+Validate configuration file
+.TP
+vfio\-tool\-check\-interfaces(1)
+Check if specific interfaces exist and are in the correct mode
+.TP
+vfio\-tool\-ensure\-vfio(1)
+Ensure specific interfaces are in VFIO mode (bind if needed)
+.TP
+vfio\-tool\-setup\-grub(1)
+Setup GRUB for IOMMU support
+.TP
+vfio\-tool\-help(1)
+Print this message or the help of the given subcommand(s)
+.SH VERSION
+v0.1.0

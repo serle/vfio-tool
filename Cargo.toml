@@ -1,0 +1,44 @@
+[package]
+name = "vfio-tool"
+version = "0.1.0"
+edition = "2024"
+authors = ["Your Name <your.email@example.com>"]
+description = "Comprehensive CLI tool for VFIO device management and kernel bypass"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+# CLI framework
+clap = { version = "4.5", features = ["derive", "cargo"] }
+
+# Terminal output
+colored = "2.1"
+tabled = "0.15"
+
+# Configuration
+toml = "0.8"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Interactive prompts
+dialoguer = "0.11"
+
+# File system operations
+walkdir = "2.5"
+
+# Regex for parsing
+regex = "1.10"
+
+# System calls
+nix = { version = "0.29", features = ["user"] }
+
+# Man page generation
+clap_mangen = "0.2"
+
+[build-dependencies]
+
+[dev-dependencies]
+tempfile = "3.10"

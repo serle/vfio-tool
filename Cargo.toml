@@ -2,7 +2,7 @@
 name = "vfio-tool"
 version = "0.1.0"
 edition = "2024"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["Serle Shuman <serle.shuman@gmail.com>"]
 description = "Comprehensive CLI tool for VFIO device management and kernel bypass"
 license = "MIT"
 

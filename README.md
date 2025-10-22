@@ -2,7 +2,7 @@
 
 **Simple, reliable CLI tool for managing VFIO device bindings and kernel bypass on Linux.**
 
-[![License](https://img.shields.io/badge/license-MIT%20OR%20Apache--2.0-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Rust](https://img.shields.io/badge/rust-2024%20edition-orange.svg)](Cargo.toml)
 
 ---
@@ -467,7 +467,7 @@ The tool maintains `interface→PCI address` mappings in config:
 
 ## License
 
-MIT OR Apache-2.0
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 

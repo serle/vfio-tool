@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 authors = ["Your Name <your.email@example.com>"]
 description = "Comprehensive CLI tool for VFIO device management and kernel bypass"
-license = "MIT OR Apache-2.0"
+license = "MIT"
 
 [dependencies]
 # CLI framework
